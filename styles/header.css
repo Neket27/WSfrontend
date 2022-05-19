@@ -1,0 +1,142 @@
+
+
+
+
+
+header {
+    display: flex;
+    margin-left: 184px;
+    margin-right: 186px;
+    margin-top: 30px;
+    justify-content: space-around;
+    /*align-items: center;*/
+    /*background: grey;*/
+    
+}
+
+
+
+.heder__logo{
+width: 200px;
+height: 41px;
+margin-top: 10px;
+}
+
+.heder-nav__menu{
+  display: flex;
+  margin-left: 173px;
+  gap: 0px 49px;
+  /*background: blue;*/
+    
+
+}
+
+.menu__a:hover{
+    der-bottom: 2px dashed #000080;
+    color: rede;
+}
+
+.heder__button:hover{
+    background: gray;
+    transition: all ease 0.5s;
+}
+
+
+.heder-li__menu{
+list-style-type: none;
+
+margin-top: 14px;
+}
+
+.heder-menu__a{
+    font-style: non;
+}
+
+.heder__button{
+
+    margin-left: 159px;
+    height: 60px;
+    width: 211px;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.5314737558364868px;
+    Stext-align: center;
+    border-radius: 10px;
+    border-color: #FF7143;
+    background: #FF7143;
+    
+}
+
+.menu__a:hover{
+    border-bottom: 3px dashed #2d2d6c;
+}
+
+    @media screen and (max-width: 1300px) {
+
+    header {
+    margin-left: 80px;
+    margin-right: 86px;
+    
+}
+
+    .heder-nav__menu{
+        margin-left: 50px;
+        gap: 25px;
+
+}
+
+.heder__button{
+
+    margin-left: 59px;
+ 
+    }
+    }
+
+
+
+    @media screen and (max-width: 950px) {
+
+    header {
+    margin-left: 30px;
+    margin-right: 36px;
+    
+}
+
+    .heder-nav__menu{
+
+        margin-left: 20px;
+        gap: 18px;
+
+}
+
+.heder__button{
+
+    margin-left: 39px;
+    
+    }
+    }
+
+        @media screen and (max-width: 950px) {
+
+    header {
+    margin-left: 20px;
+    margin-right: 26px;
+    
+}
+
+    .heder-nav__menu{
+
+        margin-left: 15px;
+        gap: 10px;
+
+}
+
+.heder__button{
+    margin-left: 23px;
+     height: 60px;
+    width: 111px;
+    
+    }
+    }
+
+    
