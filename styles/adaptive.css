@@ -1,278 +1,101 @@
-@media screen and (max-width: 1230px){
-
-.main-landing{
-    display: flex;
-    gap: 0px;
-    margin-top: 40px;
-    margin-left: 100px;
-
-}
-.main-landing__wrapper{
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-    margin-bottom: 30px;
-    order: 2;
-    height: 301px;
-    width: 340px;
-
-}
-
-.main-landing__title {
-    max-width: 340px;
-    height: 60px;
-    font-size: 35px;
-    line-height: 30px;
-    letter-spacing: -2.5010533332824707px;
-    text-align: left;
-    border-radius: nullpx;
-    
-}
-
-.main-landing__text {
-    height: 60px;
-    max-width: 230px;
-    margin-top: 0px;
-    border-radius: nullpx;
-    font-size: 16px;
-    font-weight: 320;
-    line-height: 18px;
-    letter-spacing: -0.6252632141113281px;
-    text-align: left;
-    color: #696871;
-}
-
-.main-landing__blockButton{
-
-}
-.main-landing-ribbon{
-    max-width: 100%;
-}
-.main-landing__button{
-     height: 45px;
-    width: 110px;
-    margin-top: -20px;
-    font-size: 15px;
-    color: #fff;
-    background: #5454D4;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.main-landing__img {
-    width: 250px;
-    height: 344px;
-    order: 1;
-    
+@media screen and (max-width: 1200px) {
+    .main-landing {
+        gap: 1%;
     }
 
-.main-landing__downArrow__img{
-    margin-top: -20px;
-}
-.main-landing__blockButton{
-    display: flex;
-    margin-top: 40px;
-    grid-column-gap: 30px;
-
-
-}
-
-.main-landing-ribbon {
-    display: flex;
-    gap: 0px;
-    justify-content: space-evenly;
-    margin-left: 0px;
-}
-
-.main-landing__hero2__img{
-    height: 273px;
-width: 208.5px;
-left: 154px;
-top: 932px;
-border-radius: 0px;
-
-}
-
-
-.main-landing__hero__button{
-     height: 22px;
-     margin-top: -90px;
-    top: calc(50% - 22px / 2 + 103.5px);
-    font-size: 14px;
-    letter-spacing: -0.531474px;
-    background: #fff;
-    color: #5454d4;
-    border: none;
-    cursor: pointer;
-}
-
-.main-landing__hero3__img{
-    height: 273px;
-width: 208.5px;
-left: 154px;
-top: 932px;
-border-radius: 0px;
-
-}
-.main-landing__wrapper__hero{
-margin-left: 30px;
-
-}
-
-.main-landing-block-footer{
-    flex-direction: column;
-    margin-top: 30px;
-   
-}
-
-.main-landing__text__hero{
-    margin-top: -60px;
-}
-.main-landing__blockButton{
-
-}
-.main-landing__wrapper__hero3{
-    margin-left: 110px;
-}
-}
-
-@media screen and (max-width: 900px){
-
-.main-landing{
-display: flex;
-flex-direction: row;
-    gap: 14px;
-    margin-top: 70px;
- 	margin-left: 30px;
-
- }
-
-.main-landing__wrapper{
-	display: flex;
-    flex-direction: column;
-	margin-top: -32px;
-	margin-bottom: 30px;
-    order: 2;
-    height: 401px;
-    width: 390px;
-
-}
-
-.main-landing__title {
-    max-width: 200px;
-    height: 70px;
-    font-size: 35px;
-    line-height: 36px;
-    letter-spacing: -2.5010533332824707px;
-    text-align: left;
-    border-radius: nullpx;
-    
-}
-
-.main-landing__text {
-    height: 70px;
-    max-width: 400px;
-    margin-top: 30px;
-    border-radius: nullpx;
-    font-size: 17px;
-    font-weight: 350;
-    line-height: 20px;
-    letter-spacing: -0.6252632141113281px;
-    text-align: left;
-    color: #696871;
-}
-
-.main-landing__blockButton{
-
-}
-.main-landing-ribbon{
-    max-width: 100%;
-}
-.main-landing__button{
-	 height: 45px;
-    width: 110px;
-    margin-top: -20px;
-    font-size: 15px;
-    color: #fff;
-    background: #5454D4;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.main-landing__img {
-    width: 110px;
-    height: 144px;
-    order: 1;
-    
+    .main-landing__img {
+        width: 40%;
+        height: 40%;
     }
 
-.main-landing__downArrow__img{
-    margin-top: -20px;
-}
-.main-landing__blockButton{
-    display: flex;
-    margin-top: 40px;
-    grid-column-gap: 30px;
+    .main-landing__text {
+        width: 432px;
+        height: auto;
+    }
 
+    /*hero2*/
+    .main-landing__title-hero {
 
-}
+    }
 
-.main-landing-ribbon {
-    display: flex;
-    gap: 0px;
-    justify-content: space-evenly;
-    margin-left: 0px;
-}
+    .main-landing__hero2-img {
+        width: 40%;
+        height: 40%;
+    }
 
-.main-landing__hero2__img{
-    height: 173px;
-width: 108.5px;
-left: 154px;
-top: 932px;
-border-radius: 0px;
+    /*hero3*/
+    .main-landing__hero3-img {
+        width: 40%;
+        height: 40%
+    }
 
-}
+    /*ribbon*/
+    .main-landing-ribbon {
+        flex-wrap: wrap;
+    }
 
+    /*ribbon2*/
+    .main-landing-facilities {
+        flex-wrap: wrap;
+    }
 
-.main-landing__hero__button{
-     height: 22px;
-     margin-top: -90px;
-    top: calc(50% - 22px / 2 + 103.5px);
-    font-size: 14px;
-    letter-spacing: -0.531474px;
-    background: #fff;
-    color: #5454d4;
-    border: none;
-    cursor: pointer;
+    .main-landing-pricing__content {
+        flex-direction: column;
+        gap: 0px;
+    }
 }
 
-.main-landing__hero3__img{
-    height: 173px;
-width: 108.5px;
-left: 154px;
-top: 932px;
-border-radius: 0px;
+@media screen and (max-width: 1000px) {
+    html, body {
+        margin-left: 10px;
+    }
 
+    .main-landing {
+        padding: 5px;
+    }
+
+    .main-landing__title {
+        width: 80%;
+        height: 150px;
+        line-height: 57px;
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+
+    .main-landing__title-hero {
+        font-size: 50px;
+    }
 }
 
-.main-landing__wrapper__hero{
-    margin-left: 30px;
-}
-.main-landing__wrapper__hero3{
-
-
+@media screen and (max-width: 700px) {
+    .main-landing__wrapper {
+        width: 60%;
+    }
 }
 
-.main-landing-block-footer{
-    flex-direction: column;
-    margin-top: 30px;
-    margin-left: 100px;
-}
+@media screen and (max-width: 650px) {
+    .main-landing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.main-landing__wrapper  {
-    margin-left: 36px;
+    .main-landing__downArrow--img {
+        order: 1;
+    }
+
+    .main-landing__wrapper {
+        gap: 10px;
+        order: 2;
+    }
+
+    .main-landing__title {
+        width: 100%;
+        text-align: center;
+        line-height: 57px;
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
 }
 
 

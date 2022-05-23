@@ -1,59 +1,46 @@
-
-
-
-
-
 header {
     display: flex;
     margin-left: 184px;
     margin-right: 186px;
     margin-top: 30px;
     justify-content: space-around;
-    /*align-items: center;*/
-    /*background: grey;*/
-    
+    margin-bottom: 100px;
 }
 
-
-
-.heder__logo{
-width: 200px;
-height: 41px;
-margin-top: 10px;
+.heder__logo {
+    width: 200px;
+    height: 41px;
+    margin-top: 10px;
 }
 
-.heder-nav__menu{
-  display: flex;
-  margin-left: 173px;
-  gap: 0px 49px;
-  /*background: blue;*/
-    
-
+.heder-nav__menu {
+    display: flex;
+    margin-left: 173px;
+    gap: 0px 49px;
 }
 
-.menu__a:hover{
-    der-bottom: 2px dashed #000080;
+.menu__a:hover {
+    cursor: pointer;
+    /*: 2px dashed #000080;*/
     color: rede;
 }
 
-.heder__button:hover{
-    background: gray;
+.heder__button:hover {
+    background: #B14A19FF;
+    border-color: #B14A19FF;
     transition: all ease 0.5s;
 }
 
 
-.heder-li__menu{
-list-style-type: none;
-
-margin-top: 14px;
+.heder-li__menu {
+    list-style-type: none;
+    margin-top: 14px;
 }
 
-.heder-menu__a{
-    font-style: non;
+.heder-menu__a {
+    font-style: none;
 }
-
-.heder__button{
-
+.heder__button {
     margin-left: 159px;
     height: 60px;
     width: 211px;
@@ -64,79 +51,77 @@ margin-top: 14px;
     border-radius: 10px;
     border-color: #FF7143;
     background: #FF7143;
-    
+    color: #FFFFFF;
+
 }
 
-.menu__a:hover{
-    border-bottom: 3px dashed #2d2d6c;
+.menu__a:hover {
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2d2d6c;
+
+
 }
 
-    @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
 
     header {
-    margin-left: 80px;
-    margin-right: 86px;
-    
-}
+        margin-left: 80px;
+        margin-right: 86px;
+    }
 
-    .heder-nav__menu{
+    .heder-nav__menu {
         margin-left: 50px;
         gap: 25px;
+    }
 
+    .heder__button {
+        margin-left: 59px;
+    }
 }
 
-.heder__button{
 
-    margin-left: 59px;
- 
-    }
-    }
-
-
-
-    @media screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
 
     header {
-    margin-left: 30px;
-    margin-right: 36px;
-    
-}
+        margin-left: 30px;
+        margin-right: 36px;
+    }
 
-    .heder-nav__menu{
-
+    .heder-nav__menu {
         margin-left: 20px;
         gap: 18px;
+    }
 
+    .heder__button {
+        margin-left: 39px;
+        height: 50px;
+        width: 175px;
+
+    }
 }
 
-.heder__button{
-
-    margin-left: 39px;
-    
+@media screen and (max-width: 950px) {
+    .heder__logo {
+        width: 100px;
+        height: 21px;
+        margin-top: 10px;
     }
-    }
-
-        @media screen and (max-width: 950px) {
-
     header {
-    margin-left: 20px;
-    margin-right: 26px;
-    
-}
+        margin-left: 20px;
+        margin-right: 26px;
+    }
 
-    .heder-nav__menu{
-
+    .heder-nav__menu {
         margin-left: 15px;
         gap: 10px;
+    }
 
+    .heder__button {
+        margin-left: 23px;
+        height: 40px;
+        width: 111px;
+    }
 }
-
-.heder__button{
-    margin-left: 23px;
-     height: 60px;
-    width: 111px;
-    
-    }
-    }
 
     
