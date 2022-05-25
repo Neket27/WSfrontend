@@ -54,6 +54,8 @@ html, body {
 }
 
 .main-landing__button-svg {
+    height: 48px;
+    width: 48px;
     border: none;
     background: none;
 }
@@ -63,9 +65,12 @@ html, body {
     background: #2d2d6c;
 }
 
-.main-landing__button-svg:hover {
-    height: 66px;
+.main-landing__button-svg {
+    height: 68px;
     width: 68px;
+}
+
+.main-landing__button-svg:hover {
     cursor: pointer;
     border-radius: 100px;
     border: 1px solid black;
@@ -138,14 +143,11 @@ html, body {
 .main-landing-facilities-img1 {
     height: 64px;
     width: 114px;
-
-
 }
 
 .main-landing-facilities-img2 {
     height: 97px;
     width: 151px;
-
 }
 
 .main-landing-facilities-img3 {
@@ -201,7 +203,6 @@ html, body {
     align-items: center;
     border-radius: 0px 10px 10px 0px;
     background: #F7F7FB;
-
 }
 
 .main-landing-pricing__button {

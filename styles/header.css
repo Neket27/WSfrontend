@@ -7,42 +7,44 @@
     margin-bottom: 100px;
 }
 
-.heder__logo {
+.header__logo {
     width: 200px;
     height: 41px;
     margin-top: 10px;
 }
 
-.heder-nav__menu {
+.header-nav__menu {
     display: flex;
     margin-left: 173px;
     gap: 0px 49px;
 }
 
-.menu__a{
+.menu__a {
     padding-bottom: 7px;
 }
+
 .menu__a:hover {
     cursor: pointer;
     margin-bottom: 10px;
-    border-bottom: 3px solid #2d2d6c;
+    border-bottom: 3px solid #5454D4;
 }
 
-.heder__button:hover {
+.header__button {
+    border: none
+}
+
+.header__button:hover {
     background: #B14A19FF;
     border-color: #B14A19FF;
     transition: all ease 0.5s;
 }
 
-.heder-li__menu {
+.header-li__menu {
     list-style-type: none;
     margin-top: 14px;
 }
 
-.heder-menu__a {
-    font-style: none;
-}
-.heder__button {
+.header__button {
     margin-left: 159px;
     height: 60px;
     width: 211px;
@@ -54,7 +56,6 @@
     border-color: #FF7143;
     background: #FF7143;
     color: #FFFFFF;
-
 }
 
 @media screen and (max-width: 1300px) {
@@ -64,12 +65,12 @@
         margin-right: 86px;
     }
 
-    .heder-nav__menu {
+    .header-nav__menu {
         margin-left: 50px;
         gap: 25px;
     }
 
-    .heder__button {
+    .header__button {
         margin-left: 59px;
     }
 }
@@ -82,12 +83,12 @@
         margin-right: 36px;
     }
 
-    .heder-nav__menu {
+    .header-nav__menu {
         margin-left: 20px;
         gap: 18px;
     }
 
-    .heder__button {
+    .header__button {
         margin-left: 39px;
         height: 50px;
         width: 175px;
@@ -96,26 +97,50 @@
 }
 
 @media screen and (max-width: 950px) {
-    .heder__logo {
+    .header__logo {
         width: 100px;
         height: 21px;
         margin-top: 10px;
     }
+
     header {
         margin-left: 20px;
         margin-right: 26px;
     }
 
-    .heder-nav__menu {
+    .header-nav__menu {
         margin-left: 15px;
         gap: 10px;
     }
 
-    .heder__button {
+    .header__button {
         margin-left: 23px;
         height: 40px;
         width: 111px;
     }
 }
 
+@media screen and (max-width: 410px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header-nav__menu {
+        order: 1;
+    }
+
+    .header__button {
+        width: 100px;
+        height: 35px;
+        order: 2;
+    }
+}
     

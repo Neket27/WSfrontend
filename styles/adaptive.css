@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 790px) {
     .main-landing__wrapper {
         width: 60%;
     }
@@ -78,10 +78,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .main-landing__downArrow--img {
-        order: 1;
     }
 
     .main-landing__wrapper {
@@ -98,4 +94,58 @@
     }
 }
 
+@media screen and (max-width: 570px) {
+    .main-landing-pricing {
+        width: 100%;
+        justify-content: center;
+    }
 
+    .main-landing-pricing__content {
+        width: 100%;
+    }
+
+    .main-landin-pricing__plan {
+        font-size: 30px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main-landing__title {
+        width: 100%;
+        text-align: center;
+        line-height: 47px;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .main-landing__text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .main-landing__button {
+        margin-right: 40px;
+        width: 111px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .main-landing__button-svg {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .main-landin-pricing__swith {
+        width: auto;
+        height: auto;
+    }
+
+    .main-landing-pricing__button {
+        padding: 13px 45px 13px 45px;
+    }
+}
