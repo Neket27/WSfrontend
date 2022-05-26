@@ -1,20 +1,22 @@
-let data;
 (async () => {
-    data = await (await fetch('motorists.json')).json();
+    let data = await fetch("motorists.json")
+        .then(response => response.json());
     addBlocksContent(data)
 })();
 
-function addBlocksContent(data) {
-    var main = document.getElementById("table-content");
-    for (let index = 0; index < data.length; index++) {
-        var str =
+function addBlocksContent(listInfo) {
+    let main = document.getElementById("table-content");
+
+    listInfo.map(data => {
+        const str =
             '<tr> ' +
-            '<td class="main-table__field">' + data[index]["person"]["firstname"] + " " + data[index]["person"]["lastname"] + '</td> ' +
-            '<td class="main-table__field">' + data[index]["car"]["manufacturer"] + '</td> ' +
-            '<td class="main-table__field">' + data[index]["car"]["model"] + '</td> ' +
-            '<td class="main-table__field">' + data[index]["car"]["year"] + '</td> ' +
+            '<td class="main-table__field">' + data.person.firstname + " " + data.person.lastname + '</td> ' +
+            '<td class="main-table__field">' + data.car.manufacturer + '</td> ' +
+            '<td class="main-table__field">' + data.car.model + '</td> ' +
+            '<td class="main-table__field">' + data.car.year + '</td> ' +
             '</tr>'
-        main.innerHTML += str;
-    }
+        return main.innerHTML += str;
+
+    });
 }
 
