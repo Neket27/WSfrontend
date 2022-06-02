@@ -1,0 +1,37 @@
+{
+  "form-interview": [
+    {
+      "label-name": "fedor",
+      "label-email": "nikita@gmail.com",
+      "label-age": "20",
+      "role": "intern",
+      "recommend": "yes",
+      "inp-2": "on",
+      "label-date": "2022-06-04",
+      "comment": "ddd",
+      "id": 1
+    },
+    {
+      "label-name": "name",
+      "label-email": "nikita@gmail.com",
+      "label-age": "19",
+      "role": "intern",
+      "recommend": "yes",
+      "inp-4": "on",
+      "label-date": "2022-06-11",
+      "comment": "zz",
+      "id": 2
+    },
+    {
+      "label-name": "fedor",
+      "label-email": "nikita@gmail.com",
+      "label-age": "16",
+      "role": "professional",
+      "recommend": "maybe",
+      "inp-10": "on",
+      "label-date": "2022-07-01",
+      "comment": "",
+      "id": 3
+    }
+  ]
+}
