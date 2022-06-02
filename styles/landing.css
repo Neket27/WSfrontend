@@ -2,20 +2,20 @@ html, body {
     overflow-x: hidden;
 }
 
-.main-landing {
+.home {
     display: flex;
     justify-content: center;
     gap: 77px;
     margin-bottom: 100px;
 }
 
-.main-landing__wrapper {
+.home__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main-landing__title {
+.home__title {
     font-size: 80px;
     width: 462px;
     height: 231px;
@@ -26,7 +26,7 @@ html, body {
     margin-bottom: 30px;
 }
 
-.main-landing__text {
+.home__text {
     font-size: 20px;
     width: 462px;
     height: auto;
@@ -35,13 +35,13 @@ html, body {
     margin-bottom: 50px;
 }
 
-.main-landing__block-button {
+.home__button-start {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.main-landing__button {
+.home__button {
     margin-right: 40px;
     background: #5454D4;
     width: 211px;
@@ -53,36 +53,36 @@ html, body {
     font-family: DMSans;
 }
 
-.main-landing__button-svg {
+.home__arrow-move {
     height: 48px;
     width: 48px;
     border: none;
     background: none;
 }
 
-.main-landing__button:hover {
+.home__button:hover {
     cursor: pointer;
     background: #2d2d6c;
 }
 
-.main-landing__button-svg {
+.home__arrow-move {
     height: 68px;
     width: 68px;
 }
 
-.main-landing__button-svg:hover {
+.home__arrow-move:hover {
     cursor: pointer;
     border-radius: 100px;
     border: 1px solid black;
     transition: all ease 0.5s;
 }
 
-.main-landing__img {
+.home__img--hero1 {
     display: flex;
     align-items: center;
 }
 
-.main-landing-ribbon {
+.home__ribbon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,41 +91,41 @@ html, body {
 }
 
 /*hero2*/
-.main-landing__hero2 {
+.hero-2 {
     gap: 165px;
 }
 
-.main-landing__wrapper-hero2 {
+.hero-2__wrapper {
     width: 556px;
 }
 
-.main-landing__title-hero {
+.home__title--less {
     width: 556px;
     height: 60px;
     font-family: DMSans;
     font-size: 50px;
 }
 
-.main-landing__hero-button {
+.home__button--less {
     color: #5454D4;
     text-decoration: none;
     font-size: 17px;
     font-family: DMSans;
 }
 
-.main-landing__hero-button:hover {
+.home__button--less:hover {
     cursor: pointer;
     color: #cc1313;
 }
 
 /*hero3*/
-.main-landing__hero3 {
+.hero-3 {
     gap: 61px;
     margin-bottom: 150px;
 }
 
 /*ribbon2*/
-.main-landing-facilities {
+.home__facilities {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,29 +133,29 @@ html, body {
     margin-bottom: 150px;
 }
 
-.main-landing-facilities__block {
+.facilities__block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main-landing-facilities-img1 {
+.facilities__img1 {
     height: 64px;
     width: 114px;
 }
 
-.main-landing-facilities-img2 {
+.facilities__img2 {
     height: 97px;
     width: 151px;
 }
 
-.main-landing-facilities-img3 {
+.facilities__img3 {
     height: 63px;
     width: 118px;
 }
 
-.main-landing-facilities__card-title {
+.facilities__title {
     color: #19191B;
     text-align: center;
     font-size: 24px;
@@ -163,7 +163,7 @@ html, body {
     line-height: 36px;
 }
 
-.main-landing-facilities__card-text {
+.facilities__text {
     width: 307px;
     height: 48px;
     font-size: 16px;
@@ -173,13 +173,13 @@ html, body {
 }
 
 /*pricing*/
-.main-landing-pricing {
+.block-pricing {
     display: flex;
     height: 695px;
     justify-content: center;
 }
 
-.main-landing-pricing__content {
+.block-pricing__content {
     display: flex;
     width: 1111px;
     justify-content: space-around;
@@ -188,14 +188,14 @@ html, body {
     gap: 200px;
 }
 
-.main-landin-pricing__plan {
+.block-pricing__plan {
     height: 140px;
     width: 523px;
     font-family: DMSans;
     font-size: 60px;
 }
 
-.main-landin-pricing__swith {
+.block-pricing__swith {
     display: flex;
     height: 65px;
     width: 346px;
@@ -205,17 +205,17 @@ html, body {
     background: #F7F7FB;
 }
 
-.main-landing-pricing__button {
+.block-pricing__button {
     cursor: pointer;
     padding: 20px 65px 20px 65px;
 }
 
-.main-landing-pricing__button1 {
+.block-pricing__button-hover {
     border-radius: 10px 0px 0px 10px;
     background: #5454D4;
     color: #F7F7FB;
 }
 
-.main-landing-pricing__button1:hover {
+.block-pricing__button-hover:hover {
     background: #222275;
 }

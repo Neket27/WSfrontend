@@ -1,45 +1,45 @@
 @media screen and (max-width: 1200px) {
-    .main-landing {
+    .home {
         gap: 1%;
     }
 
-    .main-landing__img {
+    .home__img--hero1 {
         width: 40%;
         height: 40%;
     }
 
-    .main-landing__text {
+    .home__text {
         width: 432px;
         height: auto;
     }
 
     /*hero2*/
-    .main-landing__title-hero {
+    .home__title--less {
 
     }
 
-    .main-landing__hero2-img {
+    .home__img--hero2 {
         width: 40%;
         height: 40%;
     }
 
     /*hero3*/
-    .main-landing__hero3-img {
+    .home__img--hero3 {
         width: 40%;
         height: 40%
     }
 
     /*ribbon*/
-    .main-landing-ribbon {
+    .home__ribbon {
         flex-wrap: wrap;
     }
 
     /*ribbon2*/
-    .main-landing-facilities {
+    .home__facilities {
         flex-wrap: wrap;
     }
 
-    .main-landing-pricing__content {
+    .block-pricing__content {
         flex-direction: column;
         gap: 0px;
     }
@@ -50,11 +50,11 @@
         margin-left: 10px;
     }
 
-    .main-landing {
+    .home {
         padding: 5px;
     }
 
-    .main-landing__title {
+    .home__title {
         width: 80%;
         height: 150px;
         line-height: 57px;
@@ -62,30 +62,30 @@
         margin-bottom: 15px;
     }
 
-    .main-landing__title-hero {
+    .home__title--less {
         font-size: 50px;
     }
 }
 
 @media screen and (max-width: 790px) {
-    .main-landing__wrapper {
+    .home__wrapper {
         width: 60%;
     }
 }
 
 @media screen and (max-width: 650px) {
-    .main-landing {
+    .home {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .main-landing__wrapper {
+    .home__wrapper {
         gap: 10px;
         order: 2;
     }
 
-    .main-landing__title {
+    .home__title {
         width: 100%;
         text-align: center;
         line-height: 57px;
@@ -95,23 +95,23 @@
 }
 
 @media screen and (max-width: 570px) {
-    .main-landing-pricing {
+    .block-pricing {
         width: 100%;
         justify-content: center;
     }
 
-    .main-landing-pricing__content {
+    .block-pricing__content {
         width: 100%;
     }
 
-    .main-landin-pricing__plan {
+    .block-pricing__plan {
         font-size: 30px;
         width: 80%;
     }
 }
 
 @media screen and (max-width: 530px) {
-    .main-landing__title {
+    .home__title {
         width: 100%;
         text-align: center;
         line-height: 47px;
@@ -119,13 +119,13 @@
         margin-bottom: 15px;
     }
 
-    .main-landing__text {
+    .home__text {
         width: 100%;
         height: auto;
         text-align: center;
     }
 
-    .main-landing__button {
+    .home__button {
         margin-right: 40px;
         width: 111px;
         height: 40px;
@@ -133,19 +133,19 @@
         font-size: 16px;
     }
 
-    .main-landing__button-svg {
+    .home__arrow-move {
         height: 40px;
         width: 40px;
     }
 }
 
 @media screen and (max-width: 410px) {
-    .main-landin-pricing__swith {
+    .block-pricing__swith {
         width: auto;
         height: auto;
     }
 
-    .main-landing-pricing__button {
+    .block-pricing__button {
         padding: 13px 45px 13px 45px;
     }
 }
