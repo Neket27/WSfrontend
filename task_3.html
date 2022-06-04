@@ -5,15 +5,13 @@
     <title>Title</title>
     <link rel="stylesheet" href="style/table.css">
     <link rel="stylesheet" href="style/statement.css">
-    <script src="js/table.js"></script>
-    <script src="js/statement.js"></script>
 
 
 </head>
 <body>
 
 <section class="section-form form">
-    <form id="applicant-form" name="myApplicantForm1">
+    <form id="applicant-form" name="applicantFormSurvey">
         <h2>Информация о заявителе</h2>
 
         <div class="form-control">
@@ -43,44 +41,24 @@
         <div class="form-control">
             <label>Вы бы порекомендовали «White Soft» своему другу?</label>
 
-            <label for="recommed-1">
-                <input type="radio" id="recommed-1" name="recommend" value="yes">Да</input>
+            <label>
+                <input type="radio" name="recommend" value="yes">Да</input>
             </label>
 
-            <label for="recommed-2">
-                <input type="radio" id="recommed-2" name="recommend" value="no">Нет</input>
+            <label>
+                <input type="radio" name="recommend" value="no">Нет</input>
             </label>
 
-            <label for="recommed-3">
-                <input type="radio" id="recommed-3" name="recommend" value="maybe">Возможно</input>
+            <label>
+                <input type="radio" name="recommend" value="maybe">Возможно</input>
             </label>
         </div>
 
-        <div class="form-control">
+        <div id="framework" class="form-control">
             <label>Известные языки и фреймворки
                 <small>(Выберите варианты)</small>
             </label>
 
-            <label for="inp-1">
-                <input type="checkbox" name="inp-1">C</input></label>
-            <label for="inp-2">
-                <input type="checkbox" name="inp-2">C++</input></label>
-            <label for="inp-3">
-                <input type="checkbox" name="inp-3">C#</input></label>
-            <label for="inp-4">
-                <input type="checkbox" name="inp-4">Java</input></label>
-            <label for="inp-5">
-                <input type="checkbox" name="inp-5">Python</input></label>
-            <label for="inp-6">
-                <input type="checkbox" name="inp-5">JavaScript</input></label>
-            <label for="inp-7">
-                <input type="checkbox" name="inp-7">React</input></label>
-            <label for="inp-8">
-                <input type="checkbox" name="inp-8">Angular</input></label>
-            <label for="inp-9">
-                <input type="checkbox" name="inp-9">Django</input></label>
-            <label for="inp-10">
-                <input type="checkbox" name="inp-10">Spring</input></label>
         </div>
 
         <div class="form-control">
@@ -116,5 +94,9 @@
     </section>
 </section>
 
+<div id="test"></div>
+
+<script src="js/table.js" defer></script>
+<script src="js/statement.js" defer></script>
 </body>
 </html>

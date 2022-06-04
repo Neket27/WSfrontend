@@ -21,11 +21,30 @@ async function useFetch(data) {
 
 window.addEventListener('load', () => {
 
-    const applicantForm1 = document.forms.myApplicantForm1;
-    applicantForm1.addEventListener('submit', (event) => {
+    const applicantForm = document.forms.applicantFormSurvey;
+    applicantForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        const data = getFormData(document.forms.myApplicantForm1);
+        const data = getFormData(document.forms.applicantFormSurvey);
         useFetch(data);
     })
 
 });
+
+
+const framework = ["C", "C++", "C#", "Java", "Python", "JavaScript", "React", "Angular", "Django", "Spring"];
+
+function createHtml(obj) {
+    let readyHtml = '';
+
+    for (let i = 0; i < obj.length; i++) {
+        readyHtml += `
+                    <label>
+                        <input type="checkbox" name="inp-${i}">${framework[i]}</input>
+                    </label>
+                           `
+    }
+    return readyHtml;
+}
+
+const f = document.getElementById("framework");
+f.innerHTML += createHtml(framework);

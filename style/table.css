@@ -22,4 +22,6 @@
     text-align: revert;
     font-size: 20px;
     background: floralwhite;
+    border-color: black;
+    border: 1px;
 }
