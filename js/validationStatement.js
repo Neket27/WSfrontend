@@ -3,7 +3,6 @@ const PATTERN_NAME = '^[А-Я][а-я]{2,} [А-Я][а-я]{2,}';
 window.addEventListener('load', () => {
 
     setValidName(inputs);
-    validErrorName()
     setValidAge(inputs);
     setValidMinDate();
 });
@@ -11,6 +10,7 @@ window.addEventListener('load', () => {
 function setValidName(inputs) {
     inputs.filter(input => input.name === "label-name")
         .forEach(input => input.pattern = PATTERN_NAME);
+    validErrorName();
 }
 
 function setValidAge(inputs) {
@@ -37,18 +37,15 @@ function setValidMinDate() {
 }
 
 function validErrorName() {
+    const fieldName= document.getElementById("label-name");
     inputs.filter(input => input.name === "label-name")
         .forEach(input => input.addEventListener('input', () => {
-            const value = RegExp(input.pattern).test(input.value);
+            const valuePattern = RegExp(input.pattern).test(input.value);
 
-            if (value === false) {
-                createError(input, "Заполните поле кирилицей, начиная с заглавной буквы");
+            if (valuePattern === false) {
+                fieldName.innerHTML="Заполните имя и фамилию начиная с заглавной буквы";
+            }else {
+                fieldName.innerHTML="Имя и Фамилия";
             }
         }));
-}
-
-function createError(input, text) {
-    const errorName = document.getElementById("name");
-    errorName.innerHTML += `<p>${text}</p>`;
-    input.setCustomValidity(text);
 }

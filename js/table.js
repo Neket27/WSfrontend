@@ -1,5 +1,3 @@
-// import camelCase from 'camelcase'; //ошибка импорта в браузере
-// console.log(camelCase('foo-bar'));
 const fields = ["Имя и Фамилия", "Почта", "Возраст", "Кем является пользователь", "Рекомендует организацию", "Дата начала работы", "Комментарий"];
 const keyAndValueSkill={student:"Студент",youngSpecialist:"Молодой специалист",professional:"Профессионал"};
 const keyAndValueRecommend={yes:"Да",no:"Нет",maybe:"Возможно"};
