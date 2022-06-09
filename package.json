@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "camelcase": "^7.0.0"
+  },
+  "type": "module"
+}

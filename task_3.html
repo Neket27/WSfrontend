@@ -15,8 +15,8 @@
         <h2>Информация о заявителе</h2>
 
         <div class="form-control">
-            <label for="name" id="label-name">Имя</label>
-            <input name="label-name" type="text" id="name" required placeholder="Enter your name"/>
+            <label for="name" id="label-name">Имя и Фамилия</label>
+            <input name="label-name" type="text" id="name" placeholder="Enter your name and last name"/>
         </div>
 
         <div class="form-control">
@@ -30,12 +30,10 @@
 
         <div class="form-control">
             <label for="role" required id="label-role">Кем вы являетесь?</label>
-            <select name="role" required id="role">
-                <option value="select">Выберите</option>
+            <select name="role" id="role">
                 <option value="student">Студент</option>
                 <option value="youngSpecialist">Молодой специалист</option>
                 <option value="professional">Профессионал</option>
-                <!--                <option value="other">Другой</option>-->
             </select>
         </div>
 
@@ -43,7 +41,7 @@
             <label>Вы бы порекомендовали «White Soft» своему другу?</label>
 
             <label>
-                <input type="radio" name="recommend" value="yes">Да</input>
+                <input type="radio" required name="recommend" value="yes">Да</input>
             </label>
 
             <label>
@@ -56,14 +54,16 @@
         </div>
 
         <div class="form-control">
-
-            <div id="skill">
+            <div id="skills">
 
             </div>
         </div>
 
         <div class="form-control">
-            <input type="date" name="label-date">
+            <label>
+                Выберите дату собеседования
+                <input type="date" name="label-date">
+            </label>
         </div>
 
         <div class="form-control">
@@ -81,15 +81,7 @@
     <section class="main-table table">
         <div class="main-table__wrapper">
             <table id="table-content">
-                <tr>
-                    <th class="main-table__field">Имя</th>
-                    <th class="main-table__field">Почта</th>
-                    <th class="main-table__field">Возраст</th>
-                    <th class="main-table__field">Роль</th>
-                    <th class="main-table__field">Рекомендация</th>
-                    <th class="main-table__field">Дата</th>
-                    <th class="main-table__field">Комментарий</th>
-                </tr>
+
             </table>
         </div>
     </section>
@@ -106,5 +98,6 @@
 
 <script src="js/table.js" defer></script>
 <script src="js/statement.js" defer></script>
+<script src="js/validationStatement.js" defer></script>
 </body>
 </html>

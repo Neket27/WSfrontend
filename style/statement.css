@@ -58,4 +58,5 @@ form {
 
 .form__button:hover{
     background-color: #0a864c;
+    cursor: pointer;
 }
