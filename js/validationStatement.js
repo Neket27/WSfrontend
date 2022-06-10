@@ -2,26 +2,26 @@ const inputs = Array.from(document.querySelectorAll('#applicant-form input'));
 const PATTERN_NAME = '^[А-Я][а-я]{2,} [А-Я][а-я]{2,}';
 window.addEventListener('load', () => {
 
-    setValidName(inputs);
-    setValidAge(inputs);
-    setValidMinDate();
+    validityName(inputs);
+    validityAge(inputs);
+    validityDate();
 });
 
-function setValidName(inputs) {
-    inputs.filter(input => input.name === "label-name")
+function validityName(inputs) {
+    inputs.filter(input => input.name === "inputName")
         .forEach(input => input.pattern = PATTERN_NAME);
     validErrorName();
 }
 
-function setValidAge(inputs) {
-    inputs.filter(input => input.name === "label-age")
+function validityAge(inputs) {
+    inputs.filter(input => input.name === "inputAge")
         .forEach(input => {
             (input.min = 15) && (input.max = 60)
         });
 }
 
-function setValidMinDate() {
-    const dateBirthday = document.querySelector('input[name=label-date]');
+function validityDate() {
+    const dateBirthday = document.querySelector('input[name=inputDate]');
     const today = new Date();
     let month = today.getMonth();
     let day = today.getDate();
@@ -37,15 +37,15 @@ function setValidMinDate() {
 }
 
 function validErrorName() {
-    const fieldName= document.getElementById("label-name");
-    inputs.filter(input => input.name === "label-name")
+    const fieldName = document.getElementById("name");
+    inputs.filter(input => input.name === "inputName")
         .forEach(input => input.addEventListener('input', () => {
             const valuePattern = RegExp(input.pattern).test(input.value);
 
             if (valuePattern === false) {
-                fieldName.innerHTML="Заполните имя и фамилию начиная с заглавной буквы";
-            }else {
-                fieldName.innerHTML="Имя и Фамилия";
+                fieldName.innerHTML = "Заполните имя и фамилию начиная с заглавной буквы";
+            } else {
+                fieldName.innerHTML = "Имя и Фамилия";
             }
         }));
 }

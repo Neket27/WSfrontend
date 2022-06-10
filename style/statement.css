@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 
-.section-form{
+.section-form {
     display: flex;
     justify-content: center;
 }
@@ -18,13 +18,22 @@ form {
 }
 
 .form-control {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    margin-bottom: 25px;
+    gap: 10px;
+    margin-top: 30px;
 }
 
 .form-control label {
-    display: block;
-    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .form-control input,
@@ -56,7 +65,7 @@ form {
     margin-bottom: 20px;
 }
 
-.form__button:hover{
+.form__button:hover {
     background-color: #0a864c;
     cursor: pointer;
 }

@@ -9,26 +9,26 @@
 <body>
 
 <section class="section-form form">
-    <form id="applicant-form" name="applicantFormSurvey">
+    <form name="applicantFormSurvey" id="applicant-form">
         <h2>Информация о заявителе</h2>
 
         <div class="form-control">
-            <label for="name" id="label-name">Имя и Фамилия</label>
-            <input name="label-name" type="text" id="name" placeholder="Enter your name and last name"/>
+            <label for="name" id="name">Имя и Фамилия</label>
+            <input name="inputName" type="text" placeholder="Enter your name and last name"/>
         </div>
 
         <div class="form-control">
-            <label for="email" id="label-email">Email</label>
-            <input name="label-email" type="email" id="email" required placeholder="Enter your email"/>
+            <label for="email">Email</label>
+            <input name="inputEmail" type="email" id="email" required placeholder="Enter your email"/>
         </div>
 
         <div class="form-control">
-            <label for="age" id="label-age">Возраст</label>
-            <input name="label-age" type="number" id="age" placeholder="Enter your age"/></div>
+            <label for="age">Возраст</label>
+            <input name="inputAge" type="number" id="age" placeholder="Enter your age"/></div>
 
         <div class="form-control">
-            <label for="role" required id="label-role">Кем вы являетесь?</label>
-            <select name="role" id="role">
+            <label for="role">Кем вы являетесь?</label>
+            <select name="selectRole" required id="role">
                 <option value="student">Студент</option>
                 <option value="youngSpecialist">Молодой специалист</option>
                 <option value="professional">Профессионал</option>
@@ -39,34 +39,33 @@
             <label>Вы бы порекомендовали «White Soft» своему другу?</label>
 
             <label>
-                <input type="radio" required name="recommend" value="yes">Да</input>
+                <input type="radio" required name="inputRecommend" value="yes">Да</input>
             </label>
 
             <label>
-                <input type="radio" name="recommend" value="no">Нет</input>
+                <input type="radio" name="inputRecommend" value="no">Нет</input>
             </label>
 
             <label>
-                <input type="radio" name="recommend" value="maybe">Возможно</input>
+                <input type="radio" name="inputRecommend" value="maybe">Возможно</input>
             </label>
         </div>
 
         <div class="form-control">
+            <label for="skills">Ваша специализация</label>
             <div id="skills">
 
             </div>
         </div>
 
         <div class="form-control">
-            <label>
-                Дата начала вашей работы
-                <input type="date" name="label-date">
-            </label>
+            <label for="date"> Дата начала вашей работы</label>
+            <input type="date" id="date" name="inputDate">
         </div>
 
         <div class="form-control">
             <label for="comment">Любые комментарии или предложения</label>
-            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+            <textarea name="textareaComment" id="comment" placeholder="Enter your comment here"></textarea>
         </div>
 
         <button id="applicantFormSubmit" class="form__button">

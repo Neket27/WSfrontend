@@ -1,6 +1,6 @@
 const fields = ["Имя и Фамилия", "Почта", "Возраст", "Кем является пользователь", "Рекомендует организацию", "Дата начала работы", "Комментарий"];
-const keyAndValueSkill={student:"Студент",youngSpecialist:"Молодой специалист",professional:"Профессионал"};
-const keyAndValueRecommend={yes:"Да",no:"Нет",maybe:"Возможно"};
+const keyAndValueSkill = {student: "Студент", youngSpecialist: "Молодой специалист", professional: "Профессионал"};
+const keyAndValueRecommend = {yes: "Да", no: "Нет", maybe: "Возможно"};
 
 (async () => {
 
@@ -14,28 +14,22 @@ const keyAndValueRecommend={yes:"Да",no:"Нет",maybe:"Возможно"};
 function addBlocksContent(listInfo) {
     const table = document.getElementById("table-content");
 
-    let str = ` 
-                <tr>
-                    <th class="main-table__field">${fields[0]}</th>
-                    <th class="main-table__field">${fields[1]}</th>
-                    <th class="main-table__field">${fields[2]}</th>
-                    <th class="main-table__field">${fields[3]}</th>
-                    <th class="main-table__field">${fields[4]}</th>
-                    <th class="main-table__field">${fields[5]}</th>
-                    <th class="main-table__field">${fields[6]}</th>
-                </tr>                           
-                  `
+    let strFieldsName = "";
+    fields.forEach(field => {
+        strFieldsName += `<th className="main-table__field">${field}</th> `
+    });
+    let str = `<tr>${strFieldsName}</tr>`;
 
     for (let i in listInfo) {
         str += `
             <tr>
-                <td className="main-table__field" style="background: antiquewhite">${listInfo[i]['label-name']}</td>
-                <td className="main-table__field">${listInfo[i]['label-email']}</td>
-                <td className="main-table__field">${listInfo[i]['label-age']}</td>
-                <td className="main-table__field">${keyAndValueSkill[listInfo[i]['role']]}</td>
-                <td className="main-table__field">${keyAndValueRecommend[listInfo[i]['recommend']]}</td>
-                <td className="main-table__field">${listInfo[i]['label-date']}</td>
-                <td className="main-table__field">${listInfo[i]['comment']}</td>
+                <td className="main-table__field" style="background: antiquewhite">${listInfo[i].inputName}</td>
+                <td className="main-table__field">${listInfo[i].inputEmail}</td>
+                <td className="main-table__field">${listInfo[i].inputAge}</td>
+                <td className="main-table__field">${keyAndValueSkill[listInfo[i].selectRole]}</td>
+                <td className="main-table__field">${keyAndValueRecommend[listInfo[i].inputRecommend]}</td>
+                <td className="main-table__field">${listInfo[i].inputDate}</td>
+                <td className="main-table__field">${listInfo[i].textareaComment}</td>
             </tr>
                 `
     }

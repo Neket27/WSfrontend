@@ -1,9 +1,11 @@
+addSkills("student"); //роль по умолчанию
+
 function getFormData(form) {
     const formData = new FormData(form);
     const res = {};
+
     Array.from(formData.keys()).forEach(key => {
-        res[key] = formData.get(key);
-        console.log(res[key]);
+        res[key] = formData.getAll(key);
     });
     return res;
 }
@@ -31,9 +33,10 @@ window.addEventListener('load', () => {
 
 const selectRoleForSkill = document.querySelector('#role');
 selectRoleForSkill.addEventListener('change', function () {
+    addSkills(selectRoleForSkill.value);
+});
 
-    const userRole = document.getElementById("role").value;
-
+function addSkills(userRole) {
     const skills = {
         student: ['КуМир', 'Pascale abs'],
         youngSpecialist: ["C", "C++", "C#", "Java", "Python", "JavaScript"],
@@ -56,4 +59,4 @@ selectRoleForSkill.addEventListener('change', function () {
 
     const specializations = document.getElementById("skills");
     specializations.innerHTML = createSkillsHtml(userRole);
-});
+}
