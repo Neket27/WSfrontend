@@ -20,11 +20,11 @@
     gap: 0px 49px;
 }
 
-.menu__a {
+.menu__link {
     padding-bottom: 7px;
 }
 
-.menu__a:hover {
+.menu__link:hover {
     cursor: pointer;
     margin-bottom: 10px;
     border-bottom: 3px solid #5454D4;
@@ -41,7 +41,7 @@
     transition: all ease 0.5s;
 }
 
-.header-li__menu {
+.menu__item {
     list-style-type: none;
     margin-top: 14px;
 }
@@ -53,7 +53,7 @@
     font-size: 17px;
     line-height: 20px;
     letter-spacing: -0.5314737558364868px;
-    Stext-align: center;
+    text-align: center;
     border-radius: 10px;
     border-color: #FF7143;
     background: #FF7143;

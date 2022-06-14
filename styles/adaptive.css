@@ -3,43 +3,51 @@
         gap: 1%;
     }
 
-    .home__img--hero1 {
-        width: 40%;
-        height: 40%;
+    .header-nav__menu {
+        gap: 40px;
     }
 
-    .home__title{
+    .home__img--hero1 {
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .home__title {
         font-size: 65px;
     }
 
     .home__text {
-        width: 432px;
+        max-width: 432px;
         height: auto;
     }
 
     /*hero2*/
-    .home__title--less {
-
+    .home__img--hero2 {
+        max-width: 40%;
+        max-height: 40%;
     }
 
-    .home__img--hero2 {
-        width: 40%;
-        height: 40%;
+    .hero-2 {
+        gap: 30px;
+    }
+
+    .hero-3 {
+        gap: 30px;
     }
 
     /*hero3*/
     .home__img--hero3 {
-        width: 40%;
-        height: 40%
+        max-width: 40%;
+        max-height: 40%
     }
 
     /*ribbon*/
-    .home__ribbon {
+    .ribbon {
         flex-wrap: wrap;
     }
 
     /*ribbon2*/
-    .home__facilities {
+    .facilities {
         flex-wrap: wrap;
     }
 
@@ -48,7 +56,7 @@
         gap: 0px;
     }
 
-    .block-pricing__plan{
+    .block-pricing__plan {
         text-align: center;
     }
 
@@ -62,7 +70,6 @@
     .home {
         padding: 5px;
     }
-
 
     .home__title {
         width: 80%;
@@ -80,9 +87,9 @@
         margin-bottom: 50px;
     }
 
-   .block-pricing__plan{
-       text-align: center;
-   }
+    .block-pricing__plan {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -111,10 +118,19 @@
         margin-bottom: 15px;
     }
 
-    .home__block--less{
+    .home__text {
+        text-align: center;
+    }
+
+    .home__block--less {
         display: flex;
         justify-content: center;
     }
+
+    .block-pricing__content {
+        height: 130px;
+    }
+
 }
 
 @media screen and (max-width: 570px) {
@@ -132,11 +148,11 @@
         width: 80%;
     }
 
-    .block-pricing{
+    .block-pricing {
         height: 100px;
     }
 
-    .block-pricing__plan{
+    .block-pricing__plan {
         text-align: center;
         font-size: 42px;
     }
@@ -152,7 +168,7 @@
         margin-bottom: 15px;
     }
 
-    .home__title--less{
+    .home__title--less {
         height: 60px;
     }
 
@@ -162,7 +178,7 @@
         text-align: center;
     }
 
-    .home__text--less{
+    .home__text--less {
         height: 40px;
     }
 
@@ -179,11 +195,11 @@
         width: 40px;
     }
 
-    .block-pricing{
+    .block-pricing {
         height: 150px;
     }
 
-    .block-pricing__plan{
+    .block-pricing__plan {
         text-align: center;
         font-size: 28px;
     }
@@ -192,7 +208,7 @@
 
 @media screen and (max-width: 410px) {
 
-    .home__title--less{
+    .home__title--less {
         font-size: 18px;
         height: 60px;
     }
@@ -203,11 +219,11 @@
         justify-content: center;
     }
 
-    .block-pricing__button-hover{
+    .block-pricing__button-hover {
         width: 22px;
     }
 
-    .block-pricing__plan{
+    .block-pricing__plan {
         height: 90px;
     }
 
@@ -220,14 +236,14 @@
 
     .home__text {
         margin-top: 30px;
-       font-size: 17px;
+        font-size: 17px;
     }
 
-    .home__facilities{
+    .facilities {
         margin-bottom: 10px;
     }
 
-    .home__text--less{
+    .home__text--less {
         margin-top: 10px;
         height: 70px;
         margin-bottom: 5px;
