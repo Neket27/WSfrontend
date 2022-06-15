@@ -1,34 +1,8 @@
 addSkills("student"); //роль по умолчанию
 
-function getFormData(form) {
-    const formData = new FormData(form);
-    const res = {};
-
-    Array.from(formData.keys()).forEach(key => {
-        res[key] = formData.getAll(key);
-    });
-    return res;
-}
-
-async function useFetch(data) {
-    await fetch('http://localhost:3000/form-interview', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    });
-}
-
-window.addEventListener('load', () => {
-
-    const applicantForm = document.forms.applicantFormSurvey;
-    applicantForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const data = getFormData(document.forms.applicantFormSurvey);
-        useFetch(data);
-        window.location.reload();
-    });
+const applicantForm = document.forms.applicantFormSurvey;
+applicantForm.addEventListener('submit', () => {
+    window.location.reload();
 });
 
 const selectRoleForSkill = document.querySelector('#role');
