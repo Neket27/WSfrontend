@@ -9,10 +9,6 @@ html, body {
     margin-bottom: 100px;
 }
 
-.header-nav__menu {
-    gap: 50px;
-}
-
 .home__wrapper {
     display: flex;
     flex-direction: column;

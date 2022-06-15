@@ -4,6 +4,7 @@
 
 .header {
     display: flex;
+    width: auto;
     justify-content: space-around;
     margin: 30px 186px 100px 184px;
 }
@@ -14,10 +15,10 @@
     margin-top: 10px;
 }
 
-.header-nav__menu {
+.header__menu{
     display: flex;
+    gap: 50px;
     margin-left: 173px;
-    gap: 0px 49px;
 }
 
 .menu__link {
@@ -123,7 +124,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 490px) {
     .header {
         flex-direction: column;
         justify-content: center;
