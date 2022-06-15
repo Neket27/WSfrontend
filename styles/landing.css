@@ -4,8 +4,7 @@ html, body {
 
 .home {
     display: flex;
-    justify-content: center;
-    gap: 77px;
+    justify-content: space-around;
     margin-bottom: 100px;
 }
 
@@ -77,9 +76,9 @@ html, body {
 
 .ribbon {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 120px;
+    gap: 40px;
     margin-bottom: 161px;
 }
 
@@ -109,9 +108,8 @@ html, body {
 /*ribbon2*/
 .facilities {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 74px;
     margin-bottom: 150px;
 }
 
@@ -123,18 +121,18 @@ html, body {
 }
 
 .facilities__img1 {
-    max-height: 64px;
-    max-width: 114px;
+    height: 64px;
+    width: 114px;
 }
 
 .facilities__img2 {
-    max-height: 97px;
-    max-width: 151px;
+    height: 97px;
+    width: 151px;
 }
 
 .facilities__img3 {
-    max-height: 63px;
-    max-width: 118px;
+    height: 63px;
+    width: 118px;
 }
 
 .facilities__title {
@@ -156,29 +154,31 @@ html, body {
 /*pricing*/
 .block-pricing {
     display: flex;
+    width: 100%;
     min-height: 695px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .block-pricing__content {
+    width: 100%;
+    max-height: 430px;
     display: flex;
-    width: 1111px;
     justify-content: space-around;
-    align-items: center;
     margin-top: 0px;
-    gap: 200px;
 }
 
 .block-pricing__plan {
-    min-height: 140px;
     max-width: 523px;
     font-family: DMSans;
     font-size: 60px;
+    margin-bottom: 0;
 }
 
 .block-pricing__swith {
     display: flex;
     max-width: 346px;
+    max-height: 60px;
+    margin-top: 84px;
     justify-content: flex-start;
     align-items: center;
     border-radius: 0px 10px 10px 0px;
@@ -190,12 +190,12 @@ html, body {
     padding: 20px 65px 20px 65px;
 }
 
-.block-pricing__button-hover {
+.block-pricing__button--active {
     border-radius: 10px 0px 0px 10px;
     background: #5454D4;
     color: #F7F7FB;
 }
 
-.block-pricing__button-hover:hover {
+.block-pricing__button--active:hover {
     background: #222275;
 }

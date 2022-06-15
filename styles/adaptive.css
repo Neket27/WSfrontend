@@ -8,8 +8,8 @@
     }
 
     .home__img--hero1 {
-        max-width: 40%;
-        max-height: 40%;
+        width: 40%;
+        height: 40%;
     }
 
     .home__title {
@@ -23,8 +23,8 @@
 
     /*hero2*/
     .home__img--hero2 {
-        max-width: 40%;
-        max-height: 40%;
+        width: 40%;
+        height: 40%;
     }
 
     .hero-2 {
@@ -37,8 +37,8 @@
 
     /*hero3*/
     .home__img--hero3 {
-        max-width: 40%;
-        max-height: 40%
+        width: 40%;
+        height: 40%
     }
 
     /*ribbon*/
@@ -49,17 +49,20 @@
     /*ribbon2*/
     .facilities {
         flex-wrap: wrap;
+        margin-bottom: 0;
+
     }
 
     .block-pricing__content {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 0px;
     }
 
     .block-pricing__plan {
         text-align: center;
     }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -111,10 +114,9 @@
         width: 60%;
     }
 
-    .block-pricing__content{
-        height: 0;
-    }
+    .block-pricing__content {
 
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -148,7 +150,7 @@
         text-align: center;
     }
 
-    .home__title--less{
+    .home__title--less {
         height: 50px;
     }
 
@@ -162,6 +164,7 @@
     }
 
     .block-pricing {
+        margin-top: 60px;
         min-height: 0px;
     }
 
@@ -169,6 +172,9 @@
         height: 130px;
     }
 
+    .block-pricing__plan{
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 570px) {
@@ -208,6 +214,9 @@
         font-size: 42px;
     }
 
+    .block-pricing__swith {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 530px) {
@@ -247,14 +256,15 @@
     }
 
     .block-pricing {
-        height: 150px;
+        display: flex;
+        justify-content: space-around;
     }
 
     .block-pricing__plan {
+        min-height: 70px;
         text-align: center;
         font-size: 28px;
     }
-
 }
 
 @media screen and (max-width: 460px) {
@@ -270,7 +280,7 @@
         justify-content: center;
     }
 
-    .block-pricing__button-hover {
+    .block-pricing__button--active {
         width: 22px;
     }
 
@@ -307,16 +317,25 @@
     .block-pricing__button {
         padding: 13px 45px 13px 45px;
     }
-
 }
 
 @media screen and (max-width: 430px) {
     .home__button--less {
-        margin-top: 50px;
+        margin-top: 5px;
     }
 
     .block-pricing__content {
         gap: 30px;
     }
 
+    .block-pricing__swith {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 370px){
+    .home__button--less {
+        margin-top: 60px;
+    }
 }

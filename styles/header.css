@@ -15,7 +15,7 @@
     margin-top: 10px;
 }
 
-.header__menu{
+.header__menu {
     display: flex;
     gap: 50px;
     margin-left: 173px;
@@ -96,7 +96,6 @@
         margin-left: 39px;
         height: 50px;
         width: 175px;
-
     }
 }
 
@@ -148,4 +147,4 @@
         order: 2;
     }
 }
-    
+
