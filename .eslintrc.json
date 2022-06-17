@@ -18,7 +18,7 @@
             "single"
         ],
         "semi": [
-            "warn",
+            "error",
             "always"
         ],
         "no-magic-numbers": [
