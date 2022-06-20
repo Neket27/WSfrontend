@@ -1,24 +1,21 @@
 .container-header {
-    width: 100%;
+    max-width: 1617px;
+    margin: 30px auto;
 }
 
 .header {
     display: flex;
-    width: auto;
     justify-content: space-around;
-    margin: 30px 186px 100px 184px;
 }
 
 .header__logo {
     width: 200px;
     height: 41px;
-    margin-top: 10px;
 }
 
 .header__menu {
     display: flex;
     gap: 50px;
-    margin-left: 173px;
 }
 
 .menu__link {
@@ -29,10 +26,6 @@
     cursor: pointer;
     margin-bottom: 10px;
     border-bottom: 3px solid #5454D4;
-}
-
-.header__button {
-    border: none
 }
 
 .header__button:hover {
@@ -48,7 +41,6 @@
 }
 
 .header__button {
-    margin-left: 159px;
     height: 60px;
     width: 211px;
     font-size: 17px;
@@ -56,7 +48,7 @@
     letter-spacing: -0.5314737558364868px;
     text-align: center;
     border-radius: 10px;
-    border-color: #FF7143;
+    border: none;
     background: #FF7143;
     color: #FFFFFF;
 }
@@ -74,9 +66,6 @@
         gap: 25px;
     }
 
-    .header__button {
-        margin-left: 59px;
-    }
 }
 
 
@@ -93,7 +82,6 @@
     }
 
     .header__button {
-        margin-left: 39px;
         height: 50px;
         width: 175px;
     }
