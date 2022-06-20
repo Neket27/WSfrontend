@@ -3,15 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
     <link href="styles/style.css" rel="stylesheet">
-
     <script defer src="moment.js"></script>
-
 </head>
+
 <body>
 
+<section class="container-header ">
+    <header class="container-header header">
+        <img class="header__logo" src="images/logo.svg">
+        <nav class="header__menu menu">
+            <li class="menu__item"><a class="menu__link">Home</a></li>
+            <li class="menu__item"><a class="menu__link">Features</a></li>
+            <li class="menu__item"><a class="menu__link">Pricing</a></li>
+            <li class="menu__item"><a class="menu__link">Blog</a></li>
+        </nav>
+        <button class="header__button">Get Started</button>
+    </header>
+</section>
 
+<main>
+    <section class="home-hero1 home">
+        <div class="home__wrapper">
+            <h1 class="home__title">
+                Grow your subscription business
+            </h1>
+            <p class="home__text">
+                Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business
+                end-to-end.
+            </p>
+            <div class="home__button button-home">
+                <button class="button-home__start">Get Started</button>
+                <button class="button-home__arrow">
+                    <img class="button-home__arrow-active" src="images/arrow-down.svg"/>
+                </button>
+            </div>
+        </div>
+        <img src="images/hero.png" class="home__img--hero1" alt="hero"/>
+    </section>
+
+    <section class="container-pricing ">
+        <div class="container-pricing pricing">
+            <h1 class="pricing__plan">Get the right plan for future product.</h1>
+            <div class="pricing__swith">
+                <a class="pricing__button pricing__button--active">
+                    Yearly
+                </a>
+                <a class="pricing__button">Monthly</a>
+            </div>
+        </div>
+
+        <div class="container-pricing pricing-cards">
+            <div class="pricing-cards__card">
+                <p class="pricing-cards__package">Starter</p>
+                <h1 class="pricing-cards__price">Free</h1>
+                <div class="pricing-cards__characteristics">
+                    <p class="pricing-cards__website">1 Website</p>
+                    <p class="pricing-cards__hosting">5 GB Hosting</p>
+                    <p class="pricing-cards__support">Limited Support</p>
+                </div>
+                <button class="pricing-cards__button">Get Started</button>
+            </div>
+            <div class="pricing-cards__card">
+                <p class="pricing-cards__package">Premium</p>
+                <h1 class="pricing-cards__price">$29/month</h1>
+                <div class="pricing-cards__characteristics">
+                    <p class="pricing-cards__website">1 Website</p>
+                    <p class="pricing-cards__hosting">15 GB Hosting</p>
+                    <p class="pricing-cards__support">Premium Support</p>
+                </div>
+                <button class="pricing-cards__button">Get Started</button>
+            </div>
+            <div class="pricing-cards__card">
+                <p class="pricing-cards__package">Enterprise</p>
+                <h1 class="pricing-cards__price">$49/month</h1>
+                <div class="pricing-cards__characteristics">
+                    <p class="pricing-cards__website">Unlimited Website</p>
+                    <p class="pricing-cards__hosting">50 GB Hosting</p>
+                    <p class="pricing-cards__support">Premium Support</p>
+                </div>
+                <button class="pricing-cards__button">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+</main>
 
 </body>
 </html>

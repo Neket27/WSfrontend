@@ -1,2 +1,264 @@
-@import "drop-style.scss.css";
+body{
+  overflow-x: hidden;
+}
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.container-header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.header__logo {
+  width: 200px;
+  height: 41px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 45px;
+}
+
+.menu {
+}
+
+.menu__item {
+  list-style-type: none;
+}
+
+.menu__link {
+  font-size: 15px;
+
+  &:hover {
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition: $defaultTransitionMenu;
+    border-bottom: 3px solid #5454D4;
+  }
+}
+
+.header__button {
+  height: 60px;
+  width: 211px;
+  font-size: $sizeButton;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #FF7143;
+  background: #FF7143;
+  color: #FFFFFF;
+
+  &:hover {
+    background: #B14A19FF;
+    border-color: #B14A19FF;
+    transition: $defaultTransitionButton;
+  }
+}
+
+.home-hero1 {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  gap: 74px;
+  margin-bottom: 150px;
+}
+
+.home {
+}
+
+.home__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  gap: 30px;
+  margin-top: 70px;
+
+}
+
+.home__title {
+  font-size: $size_h1;
+  color: #19191B;
+  line-height: $lineHeight_h1;
+}
+
+.home__text {
+  font-size: $size_p;
+  color: #696871;
+}
+
+.home__button {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.button-home__start {
+  background: $defaultBackgroundButton;
+  width: 211px;
+  height: 60px;
+  border-radius: 10px;
+  color: $defaultColorButton;
+  border: none;
+  font-size: 17px;
+
+  &:hover {
+    transition: $defaultTransitionButton;
+    background: #2d2d6c;
+  }
+}
+
+.button-home__arrow{
+  height: auto;
+  width: 68px;
+  border: none;
+  background: none;
+}
+
+.button-home__arrow-active:hover {
+    border-radius: 100px;
+    border: 1px solid black;
+    transition: $defaultTransitionButton;
+}
+
+.home__img--hero1 {
+  height: 644px;
+  width: 580px;
+
+}
+
+.container-pricing {
+
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.pricing__plan {
+  height: 140px;
+  width: 523px;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.pricing__swith {
+  display: flex;
+  max-width: 346px;
+  max-height: 60px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 240px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.pricing__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 160px;
+  font-size: 16px;
+  line-height: 19px;
+  background: #F7F7FB;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pricing__button--active {
+  border-radius: 10px 0px 0px 10px;
+  background: $defaultBackgroundButton;
+  color: $defaultColorButton
+}
+
+.pricing__button--active:hover {
+  background: $defaultBackgroundButtonActive;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.pricing-cards__card {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 441px;
+  width: 330px;
+  border-radius: 10px;
+  transition: $defaultTransitionCard;
+  background: #F8F8F8;
+
+  &:hover {
+    height: 473px;
+    width: 376px;
+    transition: $defaultTransitionCard;
+    background: #FF7143;
+  }
+}
+
+.pricing-cards__package {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.pricing-cards__price {
+  font-size: 60px;
+  line-height: 56px;
+
+  &:hover {
+    p, h1,button {
+      color: $defaultColorHover_p;
+    }
+    button{
+      background: #9F3919;
+      border: none;
+    }
+  }
+}
+
+.pricing-cards__characteristics {
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+.pricing-cards__button {
+  height: 60px;
+  width: 285px;
+  background: #FFFFFF;
+  border: 1px solid #EAE9F2;
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #5454D4;
+
+  &:hover{
+    background: #dfe1e3;
+  }
+}

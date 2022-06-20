@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "javascript/tasks4.js",
   "scripts": {
-    "sass": "sass --watch scss/style.scss:styles/style.css",
+    "sass": "sass --watch scss/main.scss:styles/style.css",
     "eslint": "npx eslint *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run sass && npm run eslint && npx eslint ",
