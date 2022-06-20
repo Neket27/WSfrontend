@@ -6,6 +6,7 @@
 .header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .header__logo {
@@ -15,6 +16,7 @@
 
 .header__menu {
     display: flex;
+    align-items: center;
     gap: 50px;
 }
 
@@ -37,7 +39,6 @@
 
 .menu__item {
     list-style-type: none;
-    margin-top: 14px;
 }
 
 .header__button {
