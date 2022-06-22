@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "stylelint": "npx stylelint 'scss/*.scss'",
     "eslint": "npx eslint '**.js'",
-    "start": "npm run sass && npm run eslint && npx eslint && npx stylelint",
-    "date-fns": "npm run date-fns"
+    "start": "npm run sass && npm run eslint && npx eslint && npx stylelint"
   },
   "repository": {
     "type": "git",
@@ -22,15 +21,15 @@
   "homepage": "https://github.com/Neket27/WSfrontend#readme",
   "description": "",
   "dependencies": {
-    "date-fns": "^2.28.0",
-    "stylelint-config-standard-scss": "^4.0.0",
-    "stylelint-selector-bem-pattern": "^2.1.1"
+    "date-fns": "^2.28.0"
   },
   "devDependencies": {
     "audit": "^0.0.6",
     "eslint": "^8.18.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-css": "^0.6.0",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
