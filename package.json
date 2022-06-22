@@ -4,9 +4,10 @@
   "main": "javascript/tasks4.js",
   "scripts": {
     "sass": "sass --watch scss/main.scss:styles/style.css",
-    "eslint": "npx eslint *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run sass && npm run eslint && npx eslint ",
+    "stylelint": "npx stylelint 'scss/*.scss'",
+    "eslint": "npx eslint '**.js'",
+    "start": "npm run sass && npm run eslint && npx eslint && npx stylelint",
     "date-fns": "npm run date-fns"
   },
   "repository": {
@@ -21,14 +22,23 @@
   "homepage": "https://github.com/Neket27/WSfrontend#readme",
   "description": "",
   "dependencies": {
-    "audit": "^0.0.6",
     "date-fns": "^2.28.0",
-    "moment": "^2.29.3"
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-selector-bem-pattern": "^2.1.1"
   },
   "devDependencies": {
-    "eslint": "^8.17.0",
-    "eslint-config-rallycoding": "^3.2.0",
-    "i": "^0.3.7",
-    "sass": "^1.52.3"
+    "audit": "^0.0.6",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-css": "^0.6.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-prettier": "^0.0.0-empty",
+    "prettier": "^2.7.1",
+    "sass": "^1.52.3",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0"
   }
 }

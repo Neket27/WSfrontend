@@ -62,7 +62,7 @@ main {
     cursor: pointer;
     padding-bottom: 10px;
     transition: $defaultTransitionMenu;
-    border-bottom: 3px solid #5454D4;
+    border-bottom: 3px solid #5454d4;
   }
 }
 
@@ -73,13 +73,13 @@ main {
   line-height: 20px;
   text-align: center;
   border-radius: 10px;
-  border-color: #FF7143;
-  background: #FF7143;
-  color: #FFFFFF;
+  border-color: #ff7143;
+  background: #ff7143;
+  color: #fff;
 
   &:hover {
-    background: #B14A19FF;
-    border-color: #B14A19FF;
+    background: #b14a19ff;
+    border-color: #b14a19ff;
     transition: $defaultTransitionButton;
   }
 
@@ -112,7 +112,7 @@ main {
 
   @include max-width(1150) {
     margin-bottom: 50px;
-    gap: 0px;
+    gap: 0;
     margin-left: 20px;
   }
 
@@ -148,7 +148,7 @@ main {
 
 .home__title {
   font-size: $size_h1;
-  color: #19191B;
+  color: #19191b;
   line-height: $lineHeight_h1;
 
   @include max-width(1150) {
@@ -227,13 +227,13 @@ main {
   width: 580px;
 
   @include max-width(1150) {
-    height: 644px *0.8;
-    width: 580px *0.8;
+    height: 644px * 0.8;
+    width: 580px * 0.8;
   }
 
   @include max-width(850) {
-    height: 644px *0.4;
-    width: 580px *0.4;
+    height: 644px * 0.4;
+    width: 580px * 0.4;
   }
 }
 
@@ -292,7 +292,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   margin-left: 240px;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
 
   @include max-width(1150) {
     margin-left: 80px;
@@ -311,15 +311,15 @@ main {
   width: 160px;
   font-size: 16px;
   line-height: 19px;
-  background: #F7F7FB;
+  background: #f7f7fb;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .pricing__button--active {
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
   background: $defaultBackgroundButton;
-  color: $defaultColorButton
+  color: $defaultColorButton;
 }
 
 .pricing__button--active:hover {
@@ -344,88 +344,93 @@ main {
   width: 330px;
   border-radius: 10px;
   transition: $defaultTransitionCard;
-  background: #F8F8F8;
+  background: #f8f8f8;
 
   &:hover {
-    p, h1, button {
+    p,
+    h1,
+    button {
       color: $defaultColorHover_p;
     }
 
     button {
-      background: #9F3919;
+      background: #9f3919;
       border: none;
     }
 
     height: 473px;
     width: 376px;
     transition: $defaultTransitionCard;
-    background: #FF7143;
+    background: #ff7143;
 
     @include max-width(1100) {
-      height: 473px *0.9;
-      width: 376px *0.9;
+      height: 473px * 0.9;
+      width: 376px * 0.9;
     }
 
     @include max-width(990) {
-      height: 473px *0.7;
-      width: 376px *0.7;
+      height: 473px * 0.7;
+      width: 376px * 0.7;
     }
+
     @include max-width(750) {
       height: 473px;
       width: 376px;
     }
 
     @include max-width(420) {
-      height: 473px*0.7;
-      width: 376px*0.7;
+      height: 473px * 0.7;
+      width: 376px * 0.7;
     }
   }
 
   @include max-width(1100) {
-    height: 473px *0.8;
-    width: 376px *0.8;
+    height: 473px * 0.8;
+    width: 376px * 0.8;
+
     h1 {
-      font-size: 60px*0.8;
+      font-size: 60px * 0.8;
     }
+
     button {
-      width: 285px*0.9;
-      height: 60px*0.9;
+      width: 285px * 0.9;
+      height: 60px * 0.9;
     }
   }
 
   @include max-width(990) {
-    height: 473px *0.6;
-    width: 376px *0.6;
+    height: 473px * 0.6;
+    width: 376px * 0.6;
     gap: 5px;
-    line-height: 56*0.6px;
+    line-height: 56 * 0.6px;
 
     h1 {
-      font-size: 60px*0.5;
+      font-size: 60px * 0.5;
     }
 
     button {
-      width: 285px*0.6;
-      height: 60px*0.6;
+      width: 285px * 0.6;
+      height: 60px * 0.6;
     }
   }
 
   @include max-width(750) {
-    height: 473px*0.9;
-    width: 376px*0.9;
+    height: 473px * 0.9;
+    width: 376px * 0.9;
 
     button {
-      width: 285px*0.9;
-      height: 60px*0.9;
+      width: 285px * 0.9;
+      height: 60px * 0.9;
     }
   }
 
   @include max-width(420) {
-    height: 473px*0.6;
-    width: 376px*0.6;
+    height: 473px * 0.6;
+    width: 376px * 0.6;
 
     button {
-      width: 285px*0.6;
-      height: 60px*0.6;
+      width: 285px * 0.6;
+      height: 60px * 0.6;
     }
   }
 }
@@ -447,16 +452,16 @@ main {
 .pricing-cards__button {
   height: 60px;
   width: 285px;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 10px;
   border: none;
   font-size: 17px;
   line-height: 20px;
   text-align: center;
-  color: #5454D4;
+  color: #5454d4;
 
   &:hover {
-    background: #9F3919;
-    color: #FFFFFF;
+    background: #9f3919;
+    color: #fff;
   }
 }
