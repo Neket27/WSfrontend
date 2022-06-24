@@ -1,0 +1,92 @@
+.container-header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+
+  @include max-width(750) {
+    margin-bottom: 15px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+
+  &__logo {
+    width: 200px;
+    height: 41px;
+
+    @include max-width(750) {
+      width: 130px;
+      height: auto;
+    }
+
+    @include max-width(530) {
+      display: none;
+    }
+  }
+
+  &__button {
+    height: 60px;
+    width: 211px;
+    font-size: $sizeButton;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #ff7143;
+    background: #ff7143;
+    color: #fff;
+
+    &:hover {
+      background: #b14a19ff;
+      border-color: #b14a19ff;
+      transition: $defaultTransitionButton;
+    }
+
+    @include max-width(850) {
+      height: 51px;
+      width: 179.35px;
+    }
+
+    @include max-width(750) {
+      height: 31.8px;
+      width: 111.83px;
+    }
+
+    @include max-width(580) {
+      margin-left: 10px;
+      font-size: 15px;
+    }
+
+    @include max-width(530) {
+      width: 80px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 45px;
+
+  @include max-width(750) {
+    gap: 20px;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: 15px;
+
+    &:hover {
+      cursor: pointer;
+      padding-bottom: 10px;
+      transition: $defaultTransitionMenu;
+      border-bottom: 3px solid #5454d4;
+    }
+  }
+}
