@@ -23,13 +23,13 @@ function addBlocksContent(listInfo) {
     for (let i in listInfo) {
         str += `
             <tr>
-                <td className="main-table__field" style="background: antiquewhite">${listInfo[i].inputName}</td>
-                <td className="main-table__field">${listInfo[i].inputEmail}</td>
-                <td className="main-table__field">${listInfo[i].inputAge}</td>
-                <td className="main-table__field">${keyAndValueSkill[listInfo[i].selectRole]}</td>
-                <td className="main-table__field">${keyAndValueRecommend[listInfo[i].inputRecommend]}</td>
-                <td className="main-table__field">${listInfo[i].inputDate}</td>
-                <td className="main-table__field">${listInfo[i].textareaComment}</td>
+                <td class="main-table__field">${listInfo[i].inputName}</td>
+                <td class="main-table__field">${listInfo[i].inputEmail}</td>
+                <td class="main-table__field">${listInfo[i].inputAge}</td>
+                <td class="main-table__field">${keyAndValueSkill[listInfo[i].selectRole]}</td>
+                <td class="main-table__field">${keyAndValueRecommend[listInfo[i].inputRecommend]}</td>
+                <td class="main-table__field">${listInfo[i].inputDate}</td>
+                <td class="main-table__field">${listInfo[i].textareaComment}</td>
             </tr>
                 `
     }
@@ -41,20 +41,20 @@ function getFormData(form) {
     const res = {};
 
     Array.from(formData.keys()).forEach(key => {
-        res[key] = formData.get(key);
+        const isKeyArray = formData.getAll(key).length > 1;
+        res[key] = isKeyArray ?  formData.getAll(key) :  formData.get(key);
     });
     return res;
 }
 
-async function useFetch(data) {
-    const response = await fetch('http://localhost:3000/form-interview', {
+async function sendDataFromTable(data) {
+    await fetch('http://localhost:3000/form-interview', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
     });
-    console.log(response.json())
 }
 
 window.addEventListener('load', () => {
@@ -63,7 +63,7 @@ window.addEventListener('load', () => {
     applicantForm.addEventListener('submit', (event) => {
         event.preventDefault();
         const data = getFormData(document.forms.applicantFormSurvey);
-        useFetch(data);
+        sendDataFromTable(data);
     });
 });
 

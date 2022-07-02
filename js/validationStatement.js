@@ -41,6 +41,6 @@ function validErrorName() {
     inputs.filter(input => input.name === "inputName")
         .forEach(input => input.addEventListener('input', () => {
             const valuePattern = RegExp(input.pattern).test(input.value);
-            valuePattern ? fieldName.innerHTML = "Имя и Фамилия" : fieldName.innerHTML = "Заполните имя и фамилию начиная с заглавной буквы";
+            fieldName.innerHTML = valuePattern ? "Имя и Фамилия" : "Заполните имя и фамилию начиная с заглавной буквы";
         }));
 }
