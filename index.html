@@ -12,20 +12,37 @@
 </head>
 <body>
 
-<section class="container-header ">
-    <header class="container-header header">
-        <img class="header__logo" src="images/logo/logo.png">
+<header class="header">
+    <div class="container header__inner">
+        <img class="logo" src="images/logo/logo.png" />
         <nav class="header__menu menu">
-            <li class="menu__item"><a class="menu__link">Home</a></li>
-            <li class="menu__item"><a class="menu__link">Features</a></li>
-            <li class="menu__item"><a class="menu__link">Pricing</a></li>
-            <li class="menu__item"><a class="menu__link">Blog</a></li>
+            <ul class="menu__wrapper-link link">
+                <li >
+                    <a class="menu__link" href="#">Home</a>
+                </li>
+            </ul>
+            <ul class="menu__wrapper-link link">
+                <li>
+                    <a class="menu__link" href="#">Features</a>
+                </li>
+            </ul>
+            <ul class="menu__wrapper-link link">
+                <li>
+                    <a class="menu__link" href="#">Pricing</a>
+                </li>
+            </ul>
+            <ul class="menu__wrapper-link link">
+                <li>
+                    <a class="menu__link" href="#">Blog</a>
+                </li>
+            </ul>
         </nav>
+        <button class="header__get-start-button get-start-button">
+            Get Start
+        </button>
+    </div>
+</header>
 
-        <button class="header__button">Get Started</button>
-
-    </header>
-</section>
 <main>
     <!-- Контент! -->
     <section class="home-hero1 home">
