@@ -24,7 +24,7 @@ function addSkills(userRole) {
         for (let i = 0; i < developerSkills.length; i++) {
             skillInHtml += `
                         <label>
-                          <input type="checkbox"  value="" name="inp-${userRole}">${developerSkills[i]}</input>
+                          <input type="checkbox"  value="${developerSkills[i]}" name="inp-${userRole}">${developerSkills[i]}</input>
                         </label>
                             `;
         }

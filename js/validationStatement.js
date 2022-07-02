@@ -37,7 +37,8 @@ function validityDate() {
 }
 
 function validErrorName() {
-    const fieldName = document.getElementById("name");
+    const fieldName = document.getElementById("labelName");
+
     inputs.filter(input => input.name === "inputName")
         .forEach(input => input.addEventListener('input', () => {
             const valuePattern = RegExp(input.pattern).test(input.value);
