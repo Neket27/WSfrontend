@@ -1,0 +1,319 @@
+@media screen and (max-width: 1200px) {
+    .home {
+        gap: 1%;
+    }
+
+    .header-nav__menu {
+        gap: 40px;
+    }
+
+    .home__img--hero1 {
+        width: 40%;
+        height: 40%;
+    }
+
+    .home__title {
+        font-size: 65px;
+    }
+
+    .home__text {
+        max-width: 432px;
+        height: auto;
+    }
+
+    /*hero2*/
+    .home__img--hero2 {
+        width: 40%;
+        height: 40%;
+    }
+
+    .hero-2 {
+        gap: 30px;
+    }
+
+    .hero-3 {
+        gap: 30px;
+    }
+
+    /*hero3*/
+    .home__img--hero3 {
+        width: 40%;
+        height: 40%
+    }
+
+    /*ribbon*/
+    .ribbon {
+        flex-wrap: wrap;
+    }
+
+    /*ribbon2*/
+    .facilities {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+
+    }
+
+    .block-pricing__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .block-pricing__plan {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html, body {
+        margin-left: 10px;
+    }
+
+    .home {
+        padding: 5px;
+    }
+
+    .home__title {
+        width: 80%;
+        height: 150px;
+        line-height: 57px;
+        font-size: 52px;
+        margin-bottom: 15px;
+    }
+
+    .home__title--less {
+        font-size: 50px;
+    }
+
+    .hero-3 {
+        margin-bottom: 50px;
+    }
+
+    .block-pricing__plan {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .header__button {
+        font-size: 15px;
+    }
+
+    .home__wrapper {
+        width: 60%;
+    }
+
+    .block-pricing__content {
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home__wrapper {
+        gap: 10px;
+        order: 2;
+    }
+
+    .home__title {
+        width: 100%;
+        max-height: 100px;
+        text-align: center;
+        line-height: 57px;
+        font-size: 60px;
+        margin-bottom: 52px
+    }
+
+    .home__text {
+        text-align: center;
+    }
+
+    .home__title--less {
+        height: 50px;
+    }
+
+    .home__text--less {
+        margin-bottom: 0;
+    }
+
+    .home__block--less {
+        display: flex;
+        justify-content: center;
+    }
+
+    .block-pricing {
+        margin-top: 60px;
+        min-height: 0px;
+    }
+
+    .block-pricing__content {
+        height: 130px;
+    }
+
+    .block-pricing__plan{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .block-pricing {
+        width: 100%;
+        justify-content: center;
+    }
+    .menu__link {
+        font-size: 15px;
+    }
+
+    .home__text--less {
+        margin-bottom: 50px;
+    }
+
+    .block-pricing__content {
+        width: 100%;
+    }
+
+    .block-pricing__plan {
+        font-size: 30px;
+        width: 80%;
+    }
+
+    .block-pricing {
+        height: 100px;
+    }
+
+    .block-pricing__plan {
+        text-align: center;
+        font-size: 42px;
+    }
+
+    .block-pricing__swith {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .home__title {
+        width: 100%;
+        text-align: center;
+        line-height: 47px;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .home__title--less {
+        height: 60px;
+    }
+
+    .home__text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .home__text--less {
+        height: 40px;
+    }
+
+    .home__button {
+        margin-right: 40px;
+        width: 111px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .home__arrow-move {
+        height: 40px;
+        width: 40px;
+    }
+
+    .block-pricing {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .block-pricing__plan {
+        min-height: 70px;
+        text-align: center;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .home__title--less {
+        font-size: 18px;
+        height: 60px;
+    }
+
+    .block-pricing__swith {
+        width: 200px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .block-pricing__button--active {
+        width: 22px;
+    }
+
+    .block-pricing {
+        min-height: 200px
+    }
+
+    .block-pricing__plan {
+        min-height: 70px;
+    }
+
+    .home__title {
+        height: 40px;
+        line-height: 30px;
+        font-size: 30px;
+    }
+
+
+    .home__text {
+        margin-top: 30px;
+        font-size: 17px;
+    }
+
+    .facilities {
+        margin-bottom: 10px;
+    }
+
+    .home__text--less {
+        margin-top: 10px;
+        height: 70px;
+        margin-bottom: 5px;
+    }
+
+    .block-pricing__button {
+        padding: 13px 45px 13px 45px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .home__button--less {
+        margin-top: 5px;
+    }
+
+    .block-pricing__content {
+        gap: 30px;
+    }
+
+    .block-pricing__swith {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 370px){
+    .home__button--less {
+        margin-top: 60px;
+    }
+}
