@@ -1,3 +1,6 @@
+@import "scss/variables";
+@import "scss/mixins";
+
 .container-pricing {
   margin-bottom: 50px;
 
@@ -200,13 +203,11 @@
     line-height: 28px;
   }
 
-  &__characteristics {
-    p {
-      font-size: 17px;
-      font-weight: 400;
-      line-height: 50px;
-      text-align: center;
-    }
+  &__parameter {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
   }
 
   &__button {

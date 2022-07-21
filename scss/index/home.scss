@@ -1,3 +1,6 @@
+@import "scss/variables";
+@import "scss/mixins";
+
 .home {
   display: flex;
   justify-content: space-around;
@@ -61,7 +64,7 @@
     color: #696871;
   }
 
-  &__button {
+  &__btn {
     display: flex;
     gap: 40px;
     margin-top: 20px;
@@ -71,7 +74,24 @@
     }
   }
 
-  &__button-start {
+  &__img--hero1 {
+    height: 644px;
+    width: 580px;
+
+    @include max-width(1150) {
+      height: 644px * 0.8;
+      width: 580px * 0.8;
+    }
+
+    @include max-width(850) {
+      height: 644px * 0.4;
+      width: 580px * 0.4;
+    }
+  }
+}
+
+.btn-home {
+  &__start {
     background: $defaultBackgroundButton;
     width: 211px;
     height: 60px;
@@ -91,7 +111,7 @@
     }
   }
 
-  &__button-arrow {
+  &__arrow {
     height: auto;
     width: 68px;
     border: none;
@@ -103,31 +123,16 @@
     }
   }
 
-  &__btnimg {
+  &__arrow-icon {
     @include max-width(850) {
       width: 30px;
       height: 30px;
     }
   }
 
-  &__btnimg:hover {
+  &__arrow-icon:hover {
     border-radius: 100px;
     border: 1px solid black;
     transition: $defaultTransitionButton;
-  }
-
-  &__img--hero1 {
-    height: 644px;
-    width: 580px;
-
-    @include max-width(1150) {
-      height: 644px * 0.8;
-      width: 580px * 0.8;
-    }
-
-    @include max-width(850) {
-      height: 644px * 0.4;
-      width: 580px * 0.4;
-    }
   }
 }
