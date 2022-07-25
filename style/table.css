@@ -1,0 +1,27 @@
+.table-section {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-table__wrapper {
+    justify-content: center;
+    background: #b2bbbb;
+}
+
+.main-table {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-table__field {
+    list-style-type: none;
+    text-align: revert;
+    font-size: 20px;
+    background: floralwhite;
+    border-color: black;
+    border: 1px;
+}

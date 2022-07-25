@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/table.css">
+    <link rel="stylesheet" href="style/statement.css">
+</head>
+<body>
+
+<section class="section-form form">
+    <form name="applicantFormSurvey" id="applicant-form">
+        <h2>Информация о заявителе</h2>
+
+        <div class="form-control">
+            <label for="name" id="labelName">Имя и Фамилия</label>
+            <input name="inputName" id="name" type="text" placeholder="Enter your name and last name"/>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input name="inputEmail" type="email" id="email" required placeholder="Enter your email"/>
+        </div>
+
+        <div class="form-control">
+            <label for="age">Возраст</label>
+            <input name="inputAge" type="number" id="age" placeholder="Enter your age"/></div>
+
+        <div class="form-control">
+            <label for="role">Кем вы являетесь?</label>
+            <select name="selectRole" required id="role">
+                <option value="student">Студент</option>
+                <option value="youngSpecialist">Молодой специалист</option>
+                <option value="professional">Профессионал</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>Вы бы порекомендовали «White Soft» своему другу?</label>
+
+            <label>
+                <input type="radio" required name="inputRecommend" value="yes">Да</input>
+            </label>
+
+            <label>
+                <input type="radio" name="inputRecommend" value="no">Нет</input>
+            </label>
+
+            <label>
+                <input type="radio" name="inputRecommend" value="maybe">Возможно</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="skills">Ваша специализация</label>
+            <div id="skills">
+
+            </div>
+        </div>
+
+        <div class="form-control">
+            <label for="date"> Дата начала вашей работы</label>
+            <input type="date" id="date" name="inputDate">
+        </div>
+
+        <div class="form-control">
+            <label for="comment">Любые комментарии или предложения</label>
+            <textarea name="textareaComment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <button id="applicantFormSubmit" class="form__button">
+            Отправить
+        </button>
+    </form>
+</section>
+
+<section class="table-section">
+    <section class="main-table table">
+        <div class="main-table__wrapper">
+            <table id="table-content">
+
+            </table>
+        </div>
+    </section>
+</section>
+
+<script src="js/table.js" defer></script>
+<script type="module" src="js/statement.js" defer></script>
+<script src="js/validationStatement.js" defer></script>
+</body>
+</html>
