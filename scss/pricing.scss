@@ -1,5 +1,5 @@
-@import "scss/variables";
-@import "scss/mixins";
+@import "variables";
+@import "mixins";
 
 .container-pricing {
   margin-bottom: 50px;
@@ -81,12 +81,12 @@
 
   &__button--active {
     border-radius: 10px 0 0 10px;
-    background: $defaultBackgroundButton;
-    color: $defaultColorButton;
+    background: $default-background-button;
+    color: $default-color-button;
   }
 
   &__button--active:hover {
-    background: $defaultBackgroundButtonActive;
+    background: $default-background-button-active;
   }
 }
 
@@ -106,14 +106,14 @@
     height: 441px;
     width: 330px;
     border-radius: 10px;
-    transition: $defaultTransitionCard;
+    transition: $default-transition-card;
     background: #f8f8f8;
 
     &:hover {
       p,
       h1,
       button {
-        color: $defaultColorHover_p;
+        color: $default-color-hover-p;
       }
 
       button {
@@ -123,7 +123,7 @@
 
       height: 473px;
       width: 376px;
-      transition: $defaultTransitionCard;
+      transition: $default-transition-card;
       background: #ff7143;
 
       @include max-width(1100) {

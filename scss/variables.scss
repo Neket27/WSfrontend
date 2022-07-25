@@ -1,20 +1,11 @@
-//Transition
-$defaultTransitionMenu: all ease 0.2s;
-$defaultTransitionButton: all ease 0.7s;
-$defaultTransitionCard: all ease 1s;
-
-//Size
-$sizeButton: 17px;
-$size_h1: 80px;
-$size_p: 20px;
-
-//Line-height
-$lineHeight_h1: 77px;
-
-//Background
-$defaultBackgroundButton: #5454d4;
-$defaultBackgroundButtonActive: #2d2d6c;
-
-//Color
-$defaultColorButton: white;
-$defaultColorHover_p: white;
+$default-transition-menu: all ease 0.2s;
+$default-transition-button: all ease 0.7s;
+$default-transition-card: all ease 1s;
+$size-button: 17px;
+$size-h1: 80px;
+$size-p: 20px;
+$line-height-h1: 77px;
+$default-background-button: #5454d4;
+$default-background-button-active: #2d2d6c;
+$default-color-button: white;
+$default-color-hover-p: white;

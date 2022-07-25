@@ -1,5 +1,5 @@
-@import "scss/variables";
-@import "scss/mixins";
+//@import "scss/variables";
+//@import "scss/mixins";
 
 .container-header {
   display: flex;
@@ -33,7 +33,7 @@
   &__button {
     height: 60px;
     width: 211px;
-    font-size: $sizeButton;
+    font-size: $size-button;
     line-height: 20px;
     text-align: center;
     border-radius: 10px;
@@ -44,7 +44,7 @@
     &:hover {
       background: #b14a19ff;
       border-color: #b14a19ff;
-      transition: $defaultTransitionButton;
+      transition: $default-transition-button;
     }
 
     @include max-width(850) {
@@ -88,7 +88,7 @@
     &:hover {
       cursor: pointer;
       padding-bottom: 10px;
-      transition: $defaultTransitionMenu;
+      transition: $default-transition-menu;
       border-bottom: 3px solid #5454d4;
     }
   }

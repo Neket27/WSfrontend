@@ -1,5 +1,5 @@
-@import "scss/variables";
-@import "scss/mixins";
+//@import "scss/variables";
+//@import "scss/mixins";
 
 .home {
   display: flex;
@@ -44,9 +44,9 @@
   }
 
   &__title {
-    font-size: $size_h1;
+    font-size: $size-h1;
     color: #19191b;
-    line-height: $lineHeight_h1;
+    line-height: $line-height-h1;
 
     @include max-width(1150) {
       font-size: 68px;
@@ -60,7 +60,7 @@
   }
 
   &__text {
-    font-size: $size_p;
+    font-size: $size-p;
     color: #696871;
   }
 
@@ -74,7 +74,7 @@
     }
   }
 
-  &__img--hero1 {
+  &__img-hero1 {
     height: 644px;
     width: 580px;
 
@@ -92,16 +92,16 @@
 
 .btn-home {
   &__start {
-    background: $defaultBackgroundButton;
+    background: $default-background-button;
     width: 211px;
     height: 60px;
     border-radius: 10px;
-    color: $defaultColorButton;
+    color: $default-color-button;
     border: none;
     font-size: 17px;
 
     &:hover {
-      transition: $defaultTransitionButton;
+      transition: $default-transition-button;
       background: #2d2d6c;
     }
 
@@ -133,6 +133,6 @@
   &__arrow-icon:hover {
     border-radius: 100px;
     border: 1px solid black;
-    transition: $defaultTransitionButton;
+    transition: $default-transition-button;
   }
 }
