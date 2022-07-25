@@ -6,9 +6,9 @@
     "sass": "sass --watch scss/index.scss:styles/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "npx eslint '**.js'",
-    "stylelint:fix": "stylelint scss/index/*.scss --fix && stylelint scss/*.scss --fix",
-    "stylelint": "npx stylelint 'scss/*.scss'",
-    "start": "npm run sass && npm run eslint && npx eslint && npx stylelint"
+    "stylelint:fix": "stylelint scss/*.scss --fix && stylelint scss/*.scss --fix",
+    "stylelint": "npx stylelint scss/*.scss",
+    "start": "npm run sass && npm run eslint && npm run stylelint"
   },
   "repository": {
     "type": "git",
