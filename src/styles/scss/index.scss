@@ -1,0 +1,275 @@
+@import "reset";
+@import "fonts";
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.sliders {
+  display: flex;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  border: 2px solid #fff;
+
+  &__scrolling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper-hub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 220px;
+    gap: 4px;
+
+    &:hover .slider__info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &:hover .slider-icon {
+      display: flex;
+    }
+  }
+
+  &__wrapper-up {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    display: none;
+    position: absolute;
+    padding: 6px;
+  }
+
+  &__picture {
+    width: 200px;
+    height: 200px;
+    display: flex;
+  }
+
+  &__control {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 58px;
+    gap: 10px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+  }
+
+  &__play {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    transition: all 0.1s ease-out;
+    border-radius: 50%;
+    line-height: 30px;
+    background: #ffdb4d;
+    border-color: #ffdb4d;
+  }
+
+  &__play:hover {
+    width: 58px;
+    height: 58px;
+
+    #icon_play {
+      fill: #222;
+      width: 40px;
+    }
+  }
+
+  &__wrapper-down {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  &__wrapper-down:hover {
+    h1 {
+      color: #d31111;
+    }
+  }
+
+  &__title {
+    display: flex;
+    margin-top: 4px;
+    color: #222;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: Arial, serif;
+  }
+
+  &__description {
+    display: flex;
+    color: #777;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: YandexSansText-Regular, serif;
+  }
+
+  &:hover {
+    border: 2px solid #fd0;
+    cursor: pointer;
+
+    .slider__info {
+      width: 200px;
+      height: 200px;
+      color: #f4f4f4;
+      line-height: 20px;
+      font-family: YandexSansText-Regular, serif;
+      background: #8a26ff;
+    }
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-right: 45px;
+    margin-top: -55px;
+    border-radius: 50%;
+
+    &:hover {
+      width: 50px;
+      height: 50px;
+
+      #icon_left {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 45px;
+    margin-top: -55px;
+    border-radius: 50%;
+
+    &:hover {
+      width: 50px;
+      height: 50px;
+
+      #icon_right {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+#icon_play {
+  display: flex;
+  width: 28px;
+  fill: #333131;
+
+  &:hover {
+    .slider-icon__sides {
+      width: 58px;
+      height: 58px;
+    }
+  }
+}
+
+#icon_like,
+#icon_share {
+  width: 20px;
+  fill: #fff;
+}
+
+.slider-icon {
+  &__sides {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    transition: all 0.1s ease-out;
+    border-radius: 50%;
+    line-height: 20px;
+    background: #332f30;
+    border: none;
+  }
+
+  &__sides:hover {
+    width: 42px;
+    height: 42px;
+  }
+
+  &:hover {
+    #icon_like {
+      width: 25px;
+    }
+  }
+}
+
+#icon_left {
+  width: 20px;
+  height: 20px;
+  stroke-width: 10px;
+
+  &:hover {
+    width: 24px;
+    height: 24px;
+
+    .slider__left {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+#icon_right {
+  width: 20px;
+  height: 20px;
+
+  &:hover {
+    width: 24px;
+    height: 24px;
+
+    .slider__right {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
